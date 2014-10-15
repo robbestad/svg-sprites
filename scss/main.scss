@@ -1,0 +1,33 @@
+body{
+  background:white;
+  padding:100px;
+  a{
+    color:brown;
+    font-size:3rem;
+  }
+}
+.icon {
+  width: 145px;
+  height: 145px;
+  background: transparent;
+ }
+
+.controller{
+  width:200px;
+  height:100px;
+}
+.controller:hover{
+  fill:blue;
+  padding:20px;
+  transition:2s;
+}
+.icon:hover{
+  fill:red;
+  padding:20px;
+  transition:2s;
+}
+a{
+  color:black;
+  font-size:1.2rem;
+  font-family: Georgia;
+}
