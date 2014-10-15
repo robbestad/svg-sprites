@@ -18,8 +18,30 @@ body{
   height:350px;
   transition:1s;
     position :relative;
-    -webkit-animation: mymove 7s infinite; /* Chrome, Safari, Opera */ 
-    animation: mymove 7s infinite;
+    -webkit-animation: spin 7s infinite; /* Chrome, Safari, Opera */ 
+    animation: spin 7s infinite;
+}
+
+@-moz-keyframes spin {
+    0%   {transform:rotate(0deg);fill:black;}
+    25%  {transform:rotate(90deg);fill:yellow;}
+    50%  {transform:rotate(180deg);fill:red;}
+    75%  {transform:rotate(270deg);fill:purple;}
+    100% {transform:rotate(360deg);fill:black;}
+}
+@-webkit-keyframes spin {
+    0%   {transform:rotate(0deg);fill:black;}
+    25%  {transform:rotate(90deg);fill:yellow;}
+    50%  {transform:rotate(180deg);fill:red;}
+    75%  {transform:rotate(270deg);fill:purple;}
+    100% {transform:rotate(360deg);fill:black;}
+}
+@keyframes spin {
+    0%   {transform:rotate(0deg);fill:black;}
+    25%  {transform:rotate(90deg);fill:yellow;}
+    50%  {transform:rotate(180deg);fill:red;}
+    75%  {transform:rotate(270deg);fill:purple;}
+    100% {transform:rotate(360deg);fill:black;}
 }
 
 /* Chrome, Safari, Opera */ 
