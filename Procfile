@@ -1,1 +1,1 @@
-web: npm install && node index.js
+web: npm install && gulp default && node index.js
