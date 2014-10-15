@@ -1,6 +1,6 @@
 body{
   background:white;
-  padding:100px;
+  
   a{
     color:brown;
     font-size:3rem;
@@ -13,12 +13,37 @@ body{
  }
 
 .controller{
-  width:200px;
-  height:100px;
+  text-align: center;
+  width:500px;
+  height:350px;
+  transition:1s;
+    position :relative;
+    -webkit-animation: mymove 7s infinite; /* Chrome, Safari, Opera */ 
+    animation: mymove 7s infinite;
 }
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes mymove {
+    0%   {top: 0px;width:500px;height:350px;left:300px;fill:black;}
+    25%  {top: 200px;width:600px;height:400px;left:265px;fill:yellow;}
+    50%  {top: 100px;width:700px;height:450px;left:240px;fill:red;}
+    75%  {top: 200px;width:800px;height:500px;left:200px;fill:purple;}
+    100% {top: 0px;width:500px;height:350px;left:300px;fill:black;}
+}
+
+/* Standard syntax */ 
+@keyframes mymove {
+    0%   {top: 0px;width:500px;height:350px;left:300px;fill:black;}
+    25%  {top: 200px;width:600px;height:400px;left:265px;fill:yellow;}
+    50%  {top: 100px;width:700px;height:450px;left:240px;fill:red;}
+    75%  {top: 200px;width:800px;height:500px;left:200px;fill:purple;}
+    100% {top: 0px;width:500px;height:350px;left:300px;fill:black;}
+}
+
 .controller:hover{
   fill:blue;
-  padding:20px;
+  width:800px;
+  height:600px;
   transition:2s;
 }
 .icon:hover{
