@@ -1,5 +1,5 @@
-var gulp = require('gulp');
-
+var gulp = require('gulp'),
+    watch = require("gulp-watch");
 // svg
 var svgstore = require('gulp-svgstore')
 var svgmin = require('gulp-svgmin')
@@ -10,7 +10,6 @@ gulp.task('svg', function () {
              .pipe(gulp.dest('assets'))
 })
 
-
 var sass = require("gulp-sass");
 
 gulp.task('scss', function(){
@@ -19,3 +18,10 @@ gulp.task('scss', function(){
     .pipe(gulp.dest('css'));
 
 });
+
+gulp.task("watch",function(){
+  gulp.watch('scss/**/*', ['scss']);
+  gulp.watch('svg/**/*', ['svg']);
+});
+
+gulp.task('default', ['scss', 'svg', 'watch']);

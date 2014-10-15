@@ -12,6 +12,7 @@
     "gulp": "^3.8.8",
     "gulp-sass": "^1.1.0",
     "gulp-svgmin": "^0.4.6",
-    "gulp-svgstore": "^1.0.1"
+    "gulp-svgstore": "^1.0.1",
+    "gulp-watch": "^1.1.0"
   }
 }
