@@ -4,7 +4,7 @@ var gulp = require('gulp'),
 var svgstore = require('gulp-svgstore')
 var svgmin = require('gulp-svgmin')
 gulp.task('svg', function () {
-  return gulp.src('svg/controller.svg')
+  return gulp.src('svg/**/*')
              .pipe(svgmin())
              .pipe(svgstore({ fileName: 'icons.svg', prefix: 'icon-' }))
              .pipe(gulp.dest('assets'))
