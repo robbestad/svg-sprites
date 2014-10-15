@@ -9,3 +9,13 @@ gulp.task('svg', function () {
              .pipe(svgstore({ fileName: 'icons.svg', prefix: 'icon-' }))
              .pipe(gulp.dest('assets'))
 })
+
+
+var sass = require("gulp-sass");
+
+gulp.task('scss', function(){
+  return gulp.src("scss/**/*")
+    .pipe(sass())
+    .pipe(gulp.dest('css'));
+
+});
