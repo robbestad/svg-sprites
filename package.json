@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-   "test": "echo \"Error: no test specified\" && exit 1",
-   "start": "gulp default"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp default"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "compression": "^1.1.1",
+    "express": "^4.9.7",
     "gulp": "^3.8.8",
     "gulp-sass": "^1.1.0",
     "gulp-svgmin": "^0.4.6",
