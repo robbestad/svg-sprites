@@ -24,4 +24,5 @@ gulp.task("watch",function(){
   gulp.watch('svg/**/*', ['svg']);
 });
 
-gulp.task('default', ['scss', 'svg', 'watch']);
+gulp.task('default', ['scss', 'svg']);
+gulp.task('watch', ['scss', 'svg', 'watch']);
